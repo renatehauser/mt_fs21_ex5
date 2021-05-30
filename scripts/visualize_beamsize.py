@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-bleu_scores = [11.5, 12.3, 12.3, 12.1, 12.2, 12.0, 11.8, 11.9, 11.9, 11.7]
+bleu_scores = [11.5, 12.3, 12.3, 12.1, 12.2, 12.0, 11.8, 11.9, 11.8, 11.7]
 beamsizes = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 
