@@ -73,6 +73,18 @@ Or, alternatively, you can evaluate only one model at a time:
     ./scripts/evaluate_word_level.sh
     ./scripts/evaluate_bpe2000.sh
     ./scripts/evaluate_bpe5000.sh
+    
+### Evaluate different Beamsizes
+Evaluate all different beamsize settings at once:
+
+    ./scripts/evaluate_bpe5000_10beamsizes.sh
+    
+
+# Create Graph
+To create the graph of the BLEU-scores of different beamsizes, call:
+
+    python ./scripts/visualize_beamsize.py
+    
 
 # Findings
 ## BLEU-scores
