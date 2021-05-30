@@ -105,3 +105,14 @@ In these cases, however, not very successfully.
 The BLEU-score for the bpe5000 model is 1.4 points higher. But when going through the translations manually, I couldn't really
 tell that the translations of the bpe5000 model were significantly better. In fact, both models produce quite confused sentences,
 which often repeat themselves and are ungrammatical.
+
+
+# Beamsize
+
+![Graph of Beamsizes and corresponding BLEU-scores](https://github.com/renatehauser/mt_fs21_ex5/blob/main/beamsizes.png)
+
+A beamsize of only 1 produces a rather low BLEU-score of 11.5. Increasing the beamsize to 3 or 5 raises the BLEU-score by
+0.8 BLEU-points, which is quite a significant increase. However, after that, a higher beamsize doesn't increase the BLEU-score anymore.
+On the contrary: The BLEU-score decreases again and with beamsize 13 and higher sinks under 12 BLEU-points again. I conclude,
+that a beamsize of 5 is a good choice for a setup like this, as it produced the highest BLEU-score and also doesn't slow down
+translation as drastically as a high beamsize would do.
