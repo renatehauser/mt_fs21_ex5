@@ -127,4 +127,5 @@ A beamsize of only 1 produces a rather low BLEU-score of 11.5. Increasing the be
 0.8 BLEU-points, which is quite a significant increase. However, after that, a higher beamsize doesn't increase the BLEU-score anymore.
 On the contrary: The BLEU-score decreases again and with beamsize 13 and higher sinks under 12 BLEU-points again. I conclude,
 that a beamsize of 5 is a good choice for a setup like this, as it produced the highest BLEU-score and also doesn't slow down
-translation as drastically as a high beamsize would do.
+translation as drastically as a high beamsize would do. If I want to save some more translation time, a beamsize of 3
+will be the right choice.
